@@ -1,4 +1,4 @@
 domino-raven
 ============
 
-raven is a command line app that pushes alerts to domino
+raven is a command line tool that pushes alerts to domino
