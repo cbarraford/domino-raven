@@ -143,7 +143,7 @@ def sendAlert(alert, overwrite=True):
 
     queueFile = "%s/%s_%s_%s_%s.pickle" % (opts.queueDir, alert['environment'], alert['colo'], alert['host'], alert['service'])
 
-    if response.code % 100 == 0:
+    if response.code == 200:
         print "Successfully sent message: %s" % (response.code)
         # delete queued version of alert ( if exists ) because a more recent state has just been sent
         if os.path.exists('%s/%s.log' % (conf['logdir'], 'raven')):
