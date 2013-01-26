@@ -3,11 +3,13 @@
 
 [defaults]
 
-environment=production
+environment=
 colo=
 host=
-status=3
+status=1
+tags=
+
 server=127.0.0.1
 port=8009
 logdir=/var/log/domino
-tags=
+queueDir=/opt/domino/raven/queue
